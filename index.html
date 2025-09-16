@@ -192,49 +192,5 @@
             22. UTILIZACIÓN Y TRANSFERENCIA INTERNACIONAL DE DATOS PERSONALES E INFORMACIÓN PERSONAL POR PARTE DE SAFETECH S.A.S Dependiendo de la naturaleza de las relaciones permanentes u ocasionales que cualquier persona titular de datos personales pueda tener para con SAFETECH S.A.S la totalidad de su información puede ser transferida al exterior, sujeto a los requerimientos legales aplicables, con la aceptación de la presente política, autoriza expresamente para transferir Información Personal. La información será transferida, para todas las relaciones que puedan establecerse con SAFETECH S.A.S Sin perjuicio de la obligación de observar y mantener la confidencialidad de la información, SAFETECH S.A.S tomará las medidas necesarias para que esos terceros conozcan y se comprometan a observar esta Política, bajo el entendido de que la información personal que reciban únicamente podrá ser utilizada para asuntos directamente relacionados con la relación propia de la relación con SAFETECH S.A.S y solamente mientras ésta dure, y no podrá ser usada o destinada para propósito o fin diferente. SAFETECH S.A.S también puede intercambiar Información Personal con autoridades gubernamentales o públicas de otro tipo (incluidas, entre otras autoridades judiciales o administrativas, autoridades fiscales y organismos de investigación penal, civil, administrativa, disciplinaria y fiscal), y terceros participantes en procedimientos legales civiles y sus contadores, auditores, abogados y otros asesores y representantes. 23. PERIODO DE VIGENCIA DE LAS BASES DE DATOS Las bases de datos de SAFETECH S.A.S serán conservadas durante el tiempo que sea razonable y necesario, de acuerdo con las finalidades que justificaron el Tratamiento, atendiendo a las normas aplicables a la materia de que se trate y a los aspectos administrativos, contables, fiscales, jurídicos e históricos de la información. Una vez cumplida la o las finalidades del Tratamiento y sin perjuicio de normas legales que dispongan lo contrario, procederá a la supresión de los datos personales en su posesión. No obstante, lo anterior, los datos personales deberán ser conservados cuando así se requiera para el cumplimiento de una obligación legal o contractual. 24.LIMITACIONES TEMPORALES AL TRATAMIENTO DE LOS DATOS PERSONALES De acuerdo con el Decreto 1377 de 2013, SAFETECH S.A.S sólo podrá recolectar, almacenar, usar o circular los datos personales de una persona, durante el tiempo que sea razonable y necesario, de acuerdo con las finalidades que justificaron el Tratamiento, atendiendo a las disposiciones aplicables a la materia de que se trate y a los aspectos administrativos, contables, fiscales, jurídicos e históricos de la información. Una vez cumplida la o las finalidades del Tratamiento y sin perjuicio de normas legales que dispongan lo contrario, SAFETECH S.A.S deberá proceder a la supresión de los datos personales en su posesión. Es importante aclarar que solo se mantendrán los datos necesarios para cumplir con cualquier obligación legal o contractual del Titular relacionado. 25. CONTACTO DEL RESPONSABLE Dirección Oficina Parque Empresarial Natura, Torre 1 Oficina 311 Floridablanca. Correo electrónico: services@safetech.com.co . Teléfonos: 6909530.
         </div>
     </div>
-    
-    <script>
-        // Make paragraphs editable on click
-        document.querySelectorAll('.paragraph').forEach(function(paragraph) {
-            paragraph.addEventListener('click', function() {
-                if (!this.isContentEditable) {
-                    this.contentEditable = true;
-                    this.focus();
-                    this.style.outline = '2px solid #007acc';
-                }
-            });
-            
-            paragraph.addEventListener('blur', function() {
-                this.contentEditable = false;
-                this.style.outline = 'none';
-            });
-            
-            paragraph.addEventListener('keydown', function(e) {
-                if (e.key === 'Enter' && e.ctrlKey) {
-                    this.blur();
-                }
-            });
-        });
-        
-        // Add save functionality
-        const saveButton = document.createElement('button');
-        saveButton.textContent = '💾 Guardar cambios';
-        saveButton.style.cssText = 'position: fixed; bottom: 20px; right: 20px; background: #007acc; color: white; border: none; padding: 12px 20px; border-radius: 25px; cursor: pointer; box-shadow: 0 4px 15px rgba(0,122,204,0.3); font-weight: bold;';
-        
-        saveButton.addEventListener('click', function() {
-            const content = document.documentElement.outerHTML;
-            const blob = new Blob([content], {type: 'text/html'});
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'politica_editada.html';
-            a.click();
-            URL.revokeObjectURL(url);
-            
-            alert('✅ Archivo guardado. Los cambios se han descargado como "politica_editada.html"');
-        });
-        
-        document.body.appendChild(saveButton);
-    </script>
 </body>
 </html>
